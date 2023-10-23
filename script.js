@@ -1,12 +1,25 @@
 const gridContainer = document.querySelector('#gridContainer');
-const columns = 16;
-const rows = 16;
+const columns = 27;
+const rows = 27;
 
-for (let i = 0; i < columns; i++) {
-  for (let j = 0; j < rows; j++) {
-    const cell = document.createElement('div');
-    cell.classList.add('grid-cell');
-    gridContainer.appendChild(cell);
-    cell.textContent = '';
+function createGrid(rows, columns) {
+  const totalCells = rows * columns;
+  for (let i = 0; i < totalCells; i++) {
+    const newDiv = document.createElement('div');
+    newDiv.classList.add('gridItem');
+    const cellSize = 100 / columns; // Adjust this as needed
+    newDiv.style.width = cellSize + '%';
+    newDiv.style.paddingBottom = cellSize + '%';
+    gridContainer.appendChild(newDiv);
   }
-};
+}
+
+createGrid(rows, columns);
+
+const gridItems = document.querySelectorAll('.gridItem');
+
+gridItems.forEach((gridItem) => {
+  gridItem.addEventListener('mouseover', () => {
+    gridItem.classList.add('hovered');
+  });
+});

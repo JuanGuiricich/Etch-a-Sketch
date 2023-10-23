@@ -4,8 +4,29 @@
   box-sizing: border-box;
 }
 
-.grid-cell {
-  width: 50px;
-  height: 50px;
-  border: 0.5px solid black;
+.gridItem {
+  border: 1px solid black;
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: top;
+}
+
+.hovered {
+  background-color: black;
+}
+
+.grid-container {
+  width: 700px; /* Adjust the container width as needed */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  margin: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
