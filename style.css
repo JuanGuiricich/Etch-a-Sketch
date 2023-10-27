@@ -17,7 +17,7 @@
 }
 
 .grid-container {
-  width: 700px; /* Adjust the container width as needed */
+  width: 450px;
   display: flex;
   flex-wrap: wrap;
 }
