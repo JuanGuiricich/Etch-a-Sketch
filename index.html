@@ -10,9 +10,20 @@
 <body>
   <main>
     <div class="container">
-      <a href="#" id="clearButton">Clear</a>
-      <input type="number" id="resizeInput">
-      <a href="#" id="resizeButton">Resize</a>
+      <div class="btn-container">
+        <a href="#" id="clearButton">Clear</a>
+        <div class="btn-item-container">
+          <input type="number" id="resizeInput">
+          <a href="#" id="resizeButton">Resize</a>
+        </div>
+        <div class="btn-item-container">
+          <h4>Magic Rainbow color</h4>
+          <label class="switch">
+            <input type="checkbox" id="magicRainbow">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
       <div id="gridContainer" class="grid-container">
       </div>
     </div>

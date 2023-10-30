@@ -4,6 +4,7 @@ const rows = 16;
 const clearButton = document.querySelector('#clearButton');
 const resizeButton = document.querySelector('#resizeButton');
 const resizeInput = document.querySelector('#resizeInput');
+const magicRainbow = document.querySelector('#magicRainbow');
 
 
 
@@ -61,3 +62,4 @@ resizeButton.addEventListener('click', () => {
     });
   });
 });
+
